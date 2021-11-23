@@ -11,6 +11,11 @@
 		86E74C96274C18CD00E65E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E74C95274C18CD00E65E33 /* ContentView.swift */; };
 		86E74C98274C18CE00E65E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E74C97274C18CE00E65E33 /* Assets.xcassets */; };
 		86E74C9B274C18CE00E65E33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E74C9A274C18CE00E65E33 /* Preview Assets.xcassets */; };
+		86E74CA4274C1D9900E65E33 /* SloopCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E74CA3274C1D9900E65E33 /* SloopCardView.swift */; };
+		86E74CA6274C26E200E65E33 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E74CA5274C26E200E65E33 /* StartButtonView.swift */; };
+		86E74CA8274C2C0300E65E33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E74CA7274C2C0300E65E33 /* OnboardingView.swift */; };
+		86E74CAB274C339B00E65E33 /* SloopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E74CAA274C339B00E65E33 /* SloopModel.swift */; };
+		86E74CAE274C347C00E65E33 /* SloopData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E74CAD274C347C00E65E33 /* SloopData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		86E74C95274C18CD00E65E33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86E74C97274C18CE00E65E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86E74C9A274C18CE00E65E33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86E74CA3274C1D9900E65E33 /* SloopCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SloopCardView.swift; sourceTree = "<group>"; };
+		86E74CA5274C26E200E65E33 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		86E74CA7274C2C0300E65E33 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		86E74CAA274C339B00E65E33 /* SloopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SloopModel.swift; sourceTree = "<group>"; };
+		86E74CAD274C347C00E65E33 /* SloopData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SloopData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		86E74C92274C18CD00E65E33 /* XSloop */ = {
 			isa = PBXGroup;
 			children = (
-				86E74C93274C18CD00E65E33 /* XSloopApp.swift */,
-				86E74C95274C18CD00E65E33 /* ContentView.swift */,
+				86E74CAC274C346400E65E33 /* Data */,
+				86E74CA9274C337E00E65E33 /* Model */,
+				86E74CA2274C1D6100E65E33 /* View */,
+				86E74CA1274C1D3100E65E33 /* App */,
 				86E74C97274C18CE00E65E33 /* Assets.xcassets */,
 				86E74C99274C18CE00E65E33 /* Preview Content */,
 			);
@@ -65,6 +77,41 @@
 				86E74C9A274C18CE00E65E33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86E74CA1274C1D3100E65E33 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				86E74C93274C18CD00E65E33 /* XSloopApp.swift */,
+				86E74C95274C18CD00E65E33 /* ContentView.swift */,
+				86E74CA7274C2C0300E65E33 /* OnboardingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		86E74CA2274C1D6100E65E33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86E74CA3274C1D9900E65E33 /* SloopCardView.swift */,
+				86E74CA5274C26E200E65E33 /* StartButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86E74CA9274C337E00E65E33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86E74CAA274C339B00E65E33 /* SloopModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86E74CAC274C346400E65E33 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				86E74CAD274C347C00E65E33 /* SloopData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E74C96274C18CD00E65E33 /* ContentView.swift in Sources */,
+				86E74CAB274C339B00E65E33 /* SloopModel.swift in Sources */,
+				86E74CA6274C26E200E65E33 /* StartButtonView.swift in Sources */,
+				86E74CAE274C347C00E65E33 /* SloopData.swift in Sources */,
 				86E74C94274C18CD00E65E33 /* XSloopApp.swift in Sources */,
+				86E74CA8274C2C0300E65E33 /* OnboardingView.swift in Sources */,
+				86E74CA4274C1D9900E65E33 /* SloopCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +327,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
