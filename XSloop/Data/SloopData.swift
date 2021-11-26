@@ -20,28 +20,28 @@ let sloopsData: [Sloop] = [
       ),
       Sloop(
         title: "Explore",
-        headline: "Widely appreciated for its characteristic aroma,  red color, juicy texture, and sweetness.",
+        headline: "Discover new products, explore acitvites and ask the Sloop community anything.",
         image: "explores",
         gradientColors: [Color("ColorStrawberryLight"), Color("ColorStrawberryDark")]
         
       ),
       Sloop(
         title: "Service",
-        headline: "Browse thousands of providers to find the right person for the job.",
+        headline: "Browse thousands of our contacts to find the right person for the job.",
         image: "services",
         gradientColors: [Color("ColorLemonLight"), Color("ColorLemonDark")]
        
       ),
       Sloop(
         title: "Chat",
-        headline: "Plums are a very nutritious fruit. An excellent source of vitamins, minerals, fiber and antioxidants.",
+        headline: "Talk amongst other boaters, contact the service providers, and ask for help when you need it.",
         image: "chats",
         gradientColors: [Color("ColorPlumLight"), Color("ColorPlumDark")]
         
       ),
       Sloop(
         title: "Profile",
-        headline: "Sour, round, and bright green citrus fruits. Limes are high in vitamin C, antioxidants, and other nutrients.",
+        headline: "Save your notes, contacts and tournaments all in one place!.",
         image: "profiles",
         gradientColors: [Color("ColorLimeLight"), Color("ColorLimeDark")]
         
